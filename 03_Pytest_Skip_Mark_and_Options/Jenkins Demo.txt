@@ -1,0 +1,91 @@
+STEPWISE PROCESS: Automating Python Tests in Jenkins
+STEP 1
+
+Installed Jenkins on Windows system.
+
+STEP 2
+
+Started Jenkins as a Windows service.
+
+STEP 3
+
+Opened Jenkins in browser using:
+
+http://localhost:8080
+
+STEP 4
+
+Unlocked Jenkins using initialAdminPassword.
+
+STEP 5
+
+Installed suggested Jenkins plugins.
+
+STEP 6
+
+Logged in as Admin and reached Jenkins dashboard.
+
+STEP 7
+
+Prepared Python project at:
+
+D:\PyTest-Practice
+
+STEP 8
+
+Added pytest test files using:
+
+test_*.py
+
+test_xxx() functions
+
+STEP 9
+
+Used pytest features:
+
+assertions
+
+markers (skip, skipif, xfail)
+
+pytest.ini
+
+STEP 10
+
+Created a new Jenkins Freestyle Job.
+
+STEP 11
+
+Named the job:
+
+Python-Unittest_job
+
+STEP 12
+
+Configured build step using Custom Python Builder.
+
+STEP 13
+
+Set Python path and executed pytest command:
+
+python -m pytest -v --junitxml=test_report_1.xml "D:\PyTest-Practice"
+
+STEP 14
+
+Ran the job using Build Now and executed all tests.
+
+STEP 15
+
+Published test results using JUnit report and viewed results in Jenkins.
+
+Where Test Reports Are Stored
+
+XML file location:
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Python-Unittest_job\test_report_1.xml
+
+
+Reports viewed in:
+
+Jenkins → Build → Tests
+
+Jenkins → Build → Workspace

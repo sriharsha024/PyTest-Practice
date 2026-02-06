@@ -5,8 +5,8 @@ import pytest
 # Skip all tests in this module when running on Windows
 # ==========================================================
 pytestmark = pytest.mark.skipif(
-    sys.platform == "win32",
-    reason="Skipped on Windows platform"
+    sys.platform == "Linux",
+    reason="Skipped on Linux platform"
 )
 
 # Constant used for Celsius → Fahrenheit conversion
@@ -36,6 +36,7 @@ def test_case_01():
     sys.version_info > (4, 0),
     reason="Skipped for Python versions above 4.0 (future compatibility check)"
 )
+
 def test_case_02():
     """
     Verify default Celsius to Fahrenheit conversion.

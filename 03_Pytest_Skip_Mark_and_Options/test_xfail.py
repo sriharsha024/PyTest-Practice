@@ -1,7 +1,6 @@
 import sys
 import pytest
 
-
 def test_strjoin():
     """
     Validate string joining using space and comma separators.
@@ -25,7 +24,7 @@ def test_str_04():
     a string index beyond its length.
     """
     letters = "abcdefghijklmnopqrstuvwxyz"
-    assert letters[100]
+    assert letters[10]
 
 
 @pytest.mark.xfail(
